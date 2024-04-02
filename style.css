@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    }
+    header
+    {
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(rajwada.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position:center;
+    
+    }
+    ul{
+    float: right;
+        list-style-type: none;
+        margin-top: 25px;
+    }
+    ul li
+    {
+        display: inline-block;
+    }
+ul li a
+{
+text-decoration: none;
+color: #fff;
+padding: 5px 20px;
+border: 1px solid #fff;
+transition: 0.6s ease;
+}
+ul li a:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a
+{
+    background-color: #fff;
+    color: #000;
+}
+.logo img
+{
+    float: left;
+    width: 150;
+    height: auto;
+}
+.main
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.title h1
+{
+    color: #fff;
+    font-size:70px;
+}
+
+.button
+{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button
+{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease ;
+}
+.btn:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+/---------- course--------/
+.course
+{
+    width:80%;
+    margin: auto;
+    text-align:center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.row{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight:600;
+    margin:10px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0,2)
+}
+@media(max-width: 700px){
+   .row{
+       flex-direction:column;
+   }
+}
+/-------area-------/
+.area{
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding-top: 30px;
+}
+.area-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+   position: relative;
+    overflow: hidden;
+    
+}
+
+.area-col img{
+    width: 100%;
+    display: block;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7)
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition:0.5s;
+    opacity: 0;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+/-------------Facilites--------/
+.facilities{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.facilities{
+    width:80%;
+    margin: auto;
+    text-align:center;
+    padding-top:100px;
+}
+.facilities-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align:left;
+}
+.facilities-col img{
+    width:100%;
+    border-radius: 10px;
+
+}
+.facilities-col p{
+    padding:0;
+
+}
+.facilities-col h3{
+    margin-top:16px;
+    text-align: center;
+}
+.texttinominal{
+    width:80%;
+    margin:auto;
+    padding-top:100px;
+    text-align: center;
+
+}
+.texttinominal-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #000;
+    padding: 25px;
+    cursor:pointer;
+    display: flex;
+
+    
+}
+.texttinominal-col img{
+    height:40px;
+    margin-left:5px;
+    margin-right:30px;
+    border-radius: 50%;
+}
+.texttinominal-col p{
+    padding : 0;
+}
+.texttinominal-col h6{
+    margin-top:15px;
+    text-align: left;
+
+}
+.texttinominal-col .fa{
+    color:#f44336;
+    
+}
+@media(max-width:700px){
+    .texttinominal-col img{
+        margin-left:0px;
+        margin-right:15px;
+        
+
+    }
+    /-------------Services--------/
+
+    .Services{
+        width:80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .Services{
+        width:80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .Services-col{
+        flex-basis:31%;
+        border-radius: 10px;       
+        margin-bottom: 5%;
+        text-align:left;
+    }
+    .Services-col img{
+        width:100%;
+        border-radius: 10px;
+    
+    }
+    .Services-col p{
+        padding:0;
+    
+    }
+    .Services-col h3{
+        margin-top:16px;
+        text-align: center;
+    }
+    .Services{
+        width:80%;
+        margin:auto;
+        padding-top:100px;
+        text-align: center;
+    
+    }
+    .Services-col{
+        flex-basis: 44%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        background: #000;
+        padding: 25px;
+        cursor:pointer;
+        display: flex;
+    
+        
+    }
+    .Services-col img{
+        height:40px;
+        margin-left:5px;
+        margin-right:30px;
+        border-radius: 50%;
+    }
+    .Services-col p{
+        padding : 0;
+    }
+    .Services-col h6{
+        margin-top:15px;
+        text-align: left;
+    
+    }
+    .Services-col .fa{
+        color:#f44336;
+        
+    }
+   
+         @media(max-width:700px){
+        .Services-col img{
+            margin-left:0px;
+            margin-right:15px;
+            
+    
+        }
+    }}
+    /--------------college---------/
+.college{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.college{
+    width:80%;
+    margin: auto;
+    text-align:center;
+    padding-top:100px;
+}
+.college-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align:left;
+}
+.college-col img{
+    width:100%;
+    border-radius: 10px;
+
+}
+.college-col p{
+    padding:0;
+
+}
+.college-col h3{
+    margin-top:16px;
+    text-align: center;
+}
+.texttinominal{
+    width:80%;
+    margin:auto;
+    padding-top:100px;
+    text-align: center;
+
+}
+.texttinominal-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff;
+    padding: 25px;
+    cursor:pointer;
+    display: flex;
+
+    
+}
+.texttinominal-col img{
+    height:40px;
+    margin-left:5px;
+    margin-right:30px;
+    border-radius: 50%;
+}
+.texttinominal-col p{
+    padding : 0;
+}
+.texttinominal-col h6{
+    margin-top:15px;
+    text-align: left;
+
+}
+.texttinominal-col .fa{
+    color:#f44336;
+    
+}
+@media(max-width:700px){
+    .texttinominal-col img{
+        margin-left:0px;
+        margin-right:15px;
+        
+
+    }
+   
